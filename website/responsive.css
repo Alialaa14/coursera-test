@@ -1,0 +1,187 @@
+*{
+    padding:0;
+    margin:0
+}
+body {
+    height:3000px;
+}
+header {
+    width:100%;
+    height:120px;
+   
+}
+.animate {
+    position: fixed;
+    visibility: hidden;
+     height:100px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    background-color:black;
+    transition: all .2s;
+    transition-timing-function: linear;
+    z-index: 100
+    
+}
+header nav ul li .line {
+    width:50px;
+    height:2px;
+    background-color:#FF0000;
+    visibility: hidden
+}
+.navbar ul li:hover .line {
+  visibility: visible;
+}
+.animate ul li:hover .line{
+    visibility: visible;
+}
+header .navbar {
+    height:100px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    background-color:black;
+    
+    
+    
+}
+
+header nav a {
+    text-decoration: none;
+   color:white;
+}
+header nav ul {
+    width: 500px;
+    margin:20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li a {
+    text-decoration: none;
+    font-size:17px;
+    font-weight: bold;
+    
+}
+
+header a:hover {
+    color:white;
+}
+
+
+.background {
+    width:100%;
+    height: 1350px;
+    position: relative;
+   
+  
+}
+.background img {
+    width:100%;
+   
+    
+    
+}
+.name {
+    position: absolute;
+    top:20%;
+    left:90px;
+    color: white;
+    height:250px;
+    width:800px;
+
+    
+    
+}
+.name h1 {
+    font-size: 90px;
+    font-weight:bolder;
+    font-family: "Russo One";
+}
+.button {
+    position: absolute;
+    top:37%;
+    left:90px;
+    
+}
+.button button {
+    background-color:transparent;
+    color:white;
+    font-family: cursive;
+    font-weight: bold;
+    padding:15px 30px 15px 30px ;
+    border:3px solid #E9204F;
+    cursor: pointer;
+    transition: all 1s ease;
+    
+    
+}
+button:hover {
+    background-color:#E9204F;
+}
+.container {
+    width:100%;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:155px;
+    left:80px;
+    border:none;
+    
+}
+.container > div {
+    height:430px;
+    width:30%;
+    background-color:#1B1B1B;
+    margin-right:50px;
+    color:white;
+}
+.Element {
+    height:430px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    cursor: pointer;
+    transition: all .6s ease-in-out  
+}
+.Element i , .Element h2 , .Element p {
+    width:100%;
+    padding:30px;
+}
+
+
+.container div h2 {
+   font-family: cursive;
+    font-size:30px;
+    font-weight: bold;
+}
+.container div p {
+    font-family: "Arial";
+    font-size:18px;
+}
+.container div i {
+    color:crimson;
+    font-size:40px;
+}
+.Element h2 div {
+    height: 2px;
+    width:90px;
+    background-color: #D11C46;
+}
+.container div:hover div i {
+    color:white;
+   
+}
+.container div:hover .Element {
+    background-color:#D11C46;
+}
+.container div:hover .Element h2 >div {
+    background-color:white;
+}
+
+
