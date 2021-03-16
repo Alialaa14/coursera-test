@@ -1,0 +1,296 @@
+*{
+    padding:0;
+    margin:0
+}
+body {
+    height:3000px;
+}
+header {
+    width:100%;
+    height:1200px;
+   
+}
+.animate {
+    position: fixed;
+    visibility: hidden;
+     height:100px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    background-color:black;
+    transition: all .2s;
+    transition-timing-function: linear;
+    z-index: 100
+    
+}
+header nav ul li .line {
+    width:50px;
+    height:2px;
+    background-color:#FF0000;
+    visibility: hidden
+}
+.navbar ul li:hover .line {
+  visibility: visible;
+}
+.animate ul li:hover .line{
+    visibility: visible;
+}
+header .navbar {
+    height:100px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    background-color:black;
+    
+    
+    
+}
+
+header nav a {
+    text-decoration: none;
+   color:white;
+}
+header nav ul {
+    width: 500px;
+    margin:20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li a {
+    text-decoration: none;
+    font-size:17px;
+    font-weight: bold;
+    
+}
+
+header a:hover {
+    color:white;
+}
+
+
+.background {
+    width:100%;
+    height: auto;
+    position: relative;
+   
+  
+}
+.background img {
+    width:100%;
+   
+    
+    
+}
+.name {
+    position: absolute;
+    top:25%;
+    left:90px;
+    color: white;
+    height:250px;
+    width:800px;
+
+    
+    
+}
+.name h1 {
+    font-size: 500%;
+    font-weight:bolder;
+    font-family: "Russo One";
+}
+.button {
+    position: absolute;
+    top:50%;
+    left:90px;
+    
+}
+.button button {
+    background-color:transparent;
+    color:white;
+    font-family: cursive;
+    font-weight: bold;
+    padding:15px 30px 15px 30px ;
+    border:3px solid #E9204F;
+    cursor: pointer;
+    transition: all 1s ease;
+    
+    
+}
+button:hover {
+    background-color:#E9204F;
+}
+.container {
+    width:100%;
+    height:350px;
+    position: absolute;
+    bottom: 0;
+    left:80px;
+    display: flex;
+    justify-content: center;
+}
+.container .subcontainer {
+    margin-left:30px;
+    cursor: pointer;
+    
+}
+
+.Element {
+    height:350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding:25px;
+    background-color:#161616;
+}
+
+
+.Element i{
+    font-size:40px;
+    height:20%;
+    color:#ED496F;
+}
+.Element h2{
+    color:white;
+    font-family: "Lobster"
+}
+.Element p{
+    color:white;
+   
+}
+.Element i , .Element h2 , .Element p {
+    width:100%;
+} 
+.Element h2 div {
+    height:2px;
+    width:40%;
+    background-color:#ED496F;
+}
+.Element:hover{
+    background-color:#D41F49;
+}
+.Element:hover i {
+    color:white;
+}
+.Element:hover h2 div {
+    background-color:white;
+}
+.services {
+    margin-top:100px;
+    width: 100%;
+    height:400px;
+    border:1ps solid red;
+}
+.startword {
+    width:100%;
+    height:140px;
+}
+.startword h2 {
+    font-size:50px;
+    font-weight: bold;
+    font-family:"Lobster";
+    margin:60px;
+    margin-left: 65px;
+}
+.startword p {
+    font-size:12px;
+    margin-top:-50px;
+    margin-left:65px;
+    color:#EB3560;
+}
+.subservices {
+    width:100%;
+    height:500px;
+    display: flex;
+    flex-basis: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.subservices div {
+    width:28%;
+    height:110px;
+    background-color:#F3F3F3;
+    margin-right: 35px;
+    position: relative;
+    cursor: pointer;
+   
+}
+.subservices div h3 {
+    font-size:20px;
+    font-weight: bolder;
+    font-family: "Lobster";
+    position: absolute;
+    top:48px;
+    left:30px;
+    float: left;
+    
+   
+}
+.subservices div i{
+    float: left;
+   position: absolute;
+    
+    
+     
+}
+#chess {
+    left:0;
+    top:20px;
+    font-size:70px;
+    opacity: 0;
+    
+    
+}
+.custom1{
+    animation: appearing 3s ease-in-out;
+    animation-fill-mode: both;
+}
+.custom2{
+    animation: disappear 1s linear;
+    animation-fill-mode: both;
+}
+#arrow {
+    font-size: 20px;
+    top:50px;
+    right:40px;
+    
+}
+@keyframes moving {
+    0%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+@keyframes appearing {
+    0%{
+        opacity: 0
+    }
+    35%{
+        opacity: .3
+    }
+    75%{opacity: .6}
+    100%{opacity: .9}
+}
+@keyframes disappear {
+    0%{
+        opacity: .9
+    }
+    35%{
+        opacity: .6
+    }
+    75%{opacity: .3}
+    100%{opacity: .0}
+}
+.subservices div:hover h3 {
+    animation: moving .6s ease;
+    animation-fill-mode: both;
+}
+.subservices div:hover #arrow {
+    animation: moving .6s ease;
+    animation-fill-mode: both;
+}
